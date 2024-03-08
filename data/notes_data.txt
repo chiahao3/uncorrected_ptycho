@@ -4,7 +4,7 @@
 ## Usage
 
 This folder organizes the *experimental 4D-STEM data* to provide out-of-the-box experience for people interested in trying the reconstruction. 
-If you download this folder through my github (https://github.com/chiahao3), the folders under `/data` should be empty due to file size limit on Github.
+If you download this folder through my github (https://github.com/chiahao3/uncorrected_ptycho), the folders under `/data` should be empty due to file size limit on Github.
 You would need to download the actual experimental data from our zenodo record (https://zenodo.org/doi/10.5281/zenodo.7964153) 
 Put the downloaded `scan_x128_y128.raw` into the corresponding folders and then you should be able to run reconstruction scripts from the main directory.
 

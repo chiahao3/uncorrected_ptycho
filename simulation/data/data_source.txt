@@ -1,0 +1,14 @@
+## Usage
+
+If you download this folder through my [github](https://github.com/chiahao3/uncorrected_ptycho), the folder `/data` would be empty except a text file indicating the data source due to the file size limit on Github.
+You would need to download the actual data from our [zenodo record](https://zenodo.org/doi/10.5281/zenodo.7964153) to run the `p05_generate_plot.ipynb`. 
+Put the downloaded folders under `/data` and then you should be able to run these scripts from the main directory out-of-the-box.
+
+For example:
+1. Download and unzip `Fig_03.zip` from our [zenodo record](https://zenodo.org/doi/10.5281/zenodo.7964153) 
+2. Copy all the subfolders under `/data`, and paste it to `/data` of this repo
+3. Run the example scripts `p01_...`, `p02_...`, `p03_runPtycho_worker_template.m`, etc.
+
+Note: Although you can surely download the entire repo and run the accompanying scripts from zenodo, it's easier for me (and more likely) to update/maintain this github repo than updating the zenodo record.
+Note2: Since everything in this folder is simulated, in principle you could reproduce everything given enough computation power. 
+Note3: Although I'd love to share all the simulated data, unfortunately I wouldn't be able to put all 10s TB of data even on Zenodo. So only the final results/checkpoints are uploaded.

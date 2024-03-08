@@ -15,8 +15,8 @@ Note: If you don't have a Matlab license, it is possible to run the reconstructi
 
 ## Usage
 
-If you download this folder through my [github](https://github.com/chiahao3), the sub-folders under `/data` should be empty due to the file size limit on Github.
-You would need to download the actual experimental data from our [zenodo record](https://zenodo.org/doi/10.5281/zenodo.7964153) 
+If you download this folder through my [github](https://github.com/chiahao3/uncorrected_ptycho), the sub-folders under `/data` should be empty due to the file size limit on Github.
+You would need to download the actual experimental data from our [zenodo record](https://zenodo.org/doi/10.5281/zenodo.7964153). 
 Put the downloaded `scan_x128_y128.raw` into the corresponding folders and then you should be able to run reconstruction scripts from the main directory `uncorrected_ptycho/`.
 
 For example:

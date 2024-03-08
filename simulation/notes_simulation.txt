@@ -1,0 +1,61 @@
+# Notes of `simulation/`
+-------------------------------
+
+## Usage
+
+If you download this folder through my [github](https://github.com/chiahao3/uncorrected_ptycho), the folder `/data` would be empty except a text file indicating the data source due to the file size limit on Github.
+You would need to download the actual data from our [zenodo record](https://zenodo.org/doi/10.5281/zenodo.7964153) to run the `p05_generate_plot.ipynb`. 
+Put the downloaded folders under `/data` and then you should be able to run these scripts from the main directory out-of-the-box.
+
+For example:
+1. Download and unzip `Fig_03.zip` from our [zenodo record](https://zenodo.org/doi/10.5281/zenodo.7964153) 
+2. Copy all the subfolders under `/data`, and paste it to `/data` of this repo
+3. Run the example scripts `p01_...`, `p02_...`, `p03_runPtycho_worker_template.m`, etc.
+
+Note: Although you can surely download the entire repo and run the accompanying scripts from zenodo, it's easier for me (and more likely) to update/maintain this github repo than updating the zenodo record.
+Note2: Since everything in this folder is simulated, in principle you could reproduce everything given enough computation power. 
+Note3: Although I'd love to share all the simulated data, unfortunately I wouldn't be able to put all 10s TB of data even on Zenodo. So only the final results/checkpoints are uploaded.
+
+-------------------------------
+
+## Environment and dependencies
+
+- Build your local python environment, preferrably using conda. You'll surely need `abTEM`, and ideally `cupy` to utilize GPU. 
+	-- Check out the `spec-file_abtem_altas` if you want to build from my spec file using `conda create --name abtem --file spec-file_abtem_altas.txt`
+	-- The provided spec file is for Linux, while I did set up successfully on my local Windows 10 machine. 
+	-- I recommend using at least python 3.10
+- You'll (probably) need Matlab version >= 2019 to run `fold_slice`. I've only tested up to 2023b on Windows and 2021a on Linux
+- You'll need a CUDA-compatible GPU with ideally 8 or 16 GB of RAMs that is detectable by Matlab
+
+Note: If you don't have a Matlab license, it is possible to run the reconstructions with other packages like [`py4DSTEM`](https://github.com/py4dstem/py4DSTEM) if you modify certain inputs like the CBED orientation, scan directions, etc.
+
+### Additional notes
+- For large scale production on clusters, use some simple scripts in `template2scripts` to generate the needed scripts. Make sure to check your path and folder sturcture.
+- Partial coherence simulation is mildly intense, while phonon + partial coherence can be extremely intense so please plan accordingly.
+	- I'm fortunate to have access to ~ 30 slices of 20GB A100s and it'll still take 2 weeks to generate the phonon + partial coherence dataset with 2 Cs and 21 convergence angles
+- Post processing into 4D-STEM datasets can also be extremely GPU memory limited, preferrably at least using a 20 GB momeory GPU and do it sequentially
+
+-------------------------------
+
+## References
+
+If you find the script useful for your research, please consider citing our original paper
+```bib
+@article{nguyen2024achieving,
+  title={Achieving sub-0.5-angstrom--resolution ptychography in an uncorrected electron microscope},
+  author={Nguyen, Kayla X and Jiang, Yi and Lee, Chia-Hao and Kharel, Priti and Zhang, Yue and van der Zande, Arend M and Huang, Pinshane Y},
+  journal={Science},
+  volume={383},
+  number={6685},
+  pages={865--870},
+  year={2024},
+  publisher={American Association for the Advancement of Science}
+}
+```
+
+-------------------------------
+Note: While I tried my best to ensure the codes are as correct as possible, there might still be some unknown error so please check if the results make sense for your work.
+Feel free to contact me if you have any questions, or if you find any error in the code so that we can correct that.
+
+Created by Chia-Hao Lee on 2024.03.08
+cl2696@cornell.edu

@@ -1,0 +1,21 @@
+# Notes of `archive/`
+-------------------------------
+
+## Usage
+
+Treat this folder as a historic relic. I organized it only for completeness and some peace of mind.
+
+-------------------------------
+
+## About this folder
+
+- This is an archive folder that is meant to preserve the most original scripts/package that was used to generate the data for our paper: 
+"Achieving sub-0.5-angstrom–resolution ptychography in an uncorrected electron microscope"(https://www.science.org/doi/10.1126/science.adl2029) published in Science 2024.
+
+- Instead of providing a smooth out-of-the-box experience, I want to keep everything in this folder (scripts) untouched to preserve as much details as possible (in case there's any unexpected need).
+Therefore, I've only moved the corresponding scripts and renamed them for clarity, while keeping all the content the same so that you can see the last modification was made in Dec. 2023 when I executed them.
+
+- Particular things that people might learn from these archived scripts could be the executed configurations, parameter, directory structure, and overall workflow.
+-------------------------------
+Created by Chia-Hao Lee on 2024.03.08
+cl2696@cornell.edu

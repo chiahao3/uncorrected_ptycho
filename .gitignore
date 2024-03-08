@@ -3,3 +3,7 @@
 
 # .raw EMPAD raw 4D-STEM data
 *.raw
+
+# `/data` under `simulation/`
+/simulation/data/*/*
+!/simulation/data/*.txt
