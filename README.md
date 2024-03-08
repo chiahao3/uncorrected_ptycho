@@ -1,6 +1,6 @@
 # Achieving sub-0.5-angstrom–resolution ptychography in an uncorrected electron microscope
 
-This repo presents my personal collection of code and data used for the paper [Achieving sub-0.5-angstrom–resolution ptychography in an uncorrected electron microscope](https://www.science.org/doi/10.1126/science.adl2029) published in Science (2024).
+This repo presents my personal collection of scripts and data used for the paper [Achieving sub-0.5-angstrom–resolution ptychography in an uncorrected electron microscope](https://www.science.org/doi/10.1126/science.adl2029) published in Science (2024).
 
 Our work demonstrates that with electron ptychography, one may achieve deep sub-angstron resolution on an uncorrected electron microscope.
 
@@ -10,6 +10,7 @@ While the [zenodo record](https://zenodo.org/doi/10.5281/zenodo.7964153) is mean
 
 - You'll (probably) need Matlab version >= 2019 to run `fold_slice`. I've only tested up to 2023b on Windows and 2021a on Linux
 - You'll need a CUDA-compatible GPU with ideally 8 or 16 GB of RAMs that is detectable by Matlab
+
 Note: If you don't have a Matlab license, it is possible to run the reconstructions with other packages like [`py4DSTEM`](https://github.com/py4dstem/py4DSTEM) if you modify certain inputs like the CBED orientation, scan directions, etc.
 
 ## Usage
@@ -36,7 +37,7 @@ For example:
 
 ## References
 
-If you find the code useful for your research, please consider citing our original paper
+If you find the script useful for your research, please consider citing our original paper
 ```bib
 @article{nguyen2024achieving,
   title={Achieving sub-0.5-angstrom--resolution ptychography in an uncorrected electron microscope},
