@@ -1,0 +1,28 @@
+# Notes of `archive/`
+-------------------------------
+
+## Usage
+
+Treat this folder as a historic relic. I organized it only for completeness and some peace of mind.
+
+-------------------------------
+
+## About this folder
+
+- This is an archive folder that is meant to preserve the most original scripts/package that was used to generate the data for our paper: 
+"Achieving sub-0.5-angstrom–resolution ptychography in an uncorrected electron microscope"(https://www.science.org/doi/10.1126/science.adl2029) published in Science 2024.
+
+- Instead of providing a smooth out-of-the-box experience, I want to keep everything in the folder (scripts and packages) untouched to preserve as much details as possible (in case there's any unexpected need).
+Therefore, I've only moved the corresponding scripts and renamed them for clarity, while keeping all the content the same so that you can see the last modification was made in Jan. 2023 when I executed them.
+You may notice there're a couple scripts for Fig 2g that's very similar, that is because it's very common for users to reconstruct a dataset multiple times. Sometimes we explore parameters, and sometimes we refine from the previous runs.
+It's very challenging to keep track of the entire reconstruction history of a specific reconstrution as we don't necessarily keep all the reconstruction scripts and parameters in a very organized way during preliminary exploration.
+So the 2nd best thing I could do is to provide as much as relevant scripts and hopefilly that'll be enough clues for someone who is truly determined to figure our everything.
+
+- I've also included the log files of Matlab output messages in `stdout` as they contained a lot of information like hardware, settings, paths, etc. These log files are generated when the scripts were executed.
+
+- Besides, an exact copy of the `fold_slice` that was used for the paper is also archived here as `fold_slice_220629`. The last modification date was made in June 2023 so I used it as a postfix.
+Note that we don't typically make breaking changes to `fold_slice` so the latest version you found on github (https://github.com/yijiang1/fold_slice) is still verly likely to work just as fine.
+
+-------------------------------
+Created by Chia-Hao Lee on 2024.03.07
+cl2696@cornell.edu

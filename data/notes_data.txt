@@ -1,0 +1,55 @@
+# Notes of `data/`
+-------------------------------
+
+## Usage
+
+This folder organizes the *experimental 4D-STEM data* to provide out-of-the-box experience for people interested in trying the reconstruction. 
+If you download this folder through my github (https://github.com/chiahao3), the folders under `/data` should be empty due to file size limit on Github.
+You would need to download the actual experimental data from our zenodo record (https://zenodo.org/doi/10.5281/zenodo.7964153) 
+Put the downloaded `scan_x128_y128.raw` into the corresponding folders and then you should be able to run reconstruction scripts from the main directory.
+
+For example:
+1. Download and unzip `Fig_01.zip`
+2. Copy the `Fig_01/Panel_c-d_Talos/scan_x128_y128.raw`, and paste it to `data/Fig_1d_10.3mrad_Talos/`
+3. Run reconstruction scripts `Fig_1d_10p3mrad_Talos_runPtycho.m`
+
+-------------------------------
+
+## Metadata of the experimental data
+
+### Instrument information
+- Talos (Uncorrected)    : ThermoFisher Scientific Talos F200X G2 S/TEM  (https://mrl.illinois.edu/facilities/equipment/ThermoFisher-Scientific-TalosF200X-G2)
+- Themis(Probe-corrected): FEI Themis Z Advanced Probe Aberration Corrected Analytical TEM/STEM  (https://mrl.illinois.edu/facilities/equipment/fei-themis-z-advanced-probe-aberration-corrected-analytical-temstem)
+(Note that it was still `FEI` when we purchased the microscope in 2017-18)
+
+### Fig. 1d Talos ptycho 10.3mrad
+- Sample: tBL-WSe2
+- Tool: Talos
+- Experiment conditions: 200kV, 10.3mrad convegence angle, 98mm camera length, 20.5Mx, 0nm defocus (nominal), 19pA (nominal), 1ms dwell time, 128x130 CBED size (EMPAD1), 1.5066mrad dk, 128x128 scan steps, 0.5327 Ang scan step size
+
+### Fig. 1h Themis ptycho 24.9mrad
+- Sample: tBL-WSe2
+- Tool: Themis
+- Experiment conditions: 80kV, 24.9mrad convegence angle, 185mm camera length, 14.5Mx, 0nm defocus (nominal), 19pA (nominal), 1ms dwell time, 128x130 CBED size (EMPAD1), 2.1850mrad dk, 128x128 scan steps, 0.4285 Ang scan step size
+
+### Fig. 2g Talos ptycho 7.5mrad
+- Sample: tBL-WSe2
+- Tool: Talos
+- Experiment conditions: 200kV, 7.5mrad convegence angle, 98mm camera length, 20.5Mx, 0nm defocus (nominal), 19pA (nominal), 1ms dwell time, 128x130 CBED size (EMPAD1), 1.4701mrad dk, 128x128 scan steps, 0.5327 Ang scan step size
+
+### Fig. 2h Talos ptycho 10.3mrad
+- Sample: tBL-WSe2
+- Tool: Talos
+- Experiment conditions: 200kV, 10.3mrad convegence angle, 98mm camera length, 20.5Mx, 0nm defocus (nominal), 19pA (nominal), 1ms dwell time, 128x130 CBED size (EMPAD1), 1.5066mrad dk, 128x128 scan steps, 0.5327 Ang scan step size
+
+### Fig. 2i Talos ptycho 23.1mrad 
+- Sample: tBL-WSe2
+- Tool: Talos
+- Experiment conditions: 200kV, 23.1mrad convegence angle, 160mm camera length, 28.5Mx, 50nm underfocus (nominal), 1ms dwell time, 128x130 CBED size (EMPAD1), 0.9445mrad dk, 128x128 scan steps, 0.3920 Ang scan step size
+
+Note that the input defocus for reconstruction is later calibrated in the script. 
+Although errors in scan step size, convergence angle, and defocus value can all be compensated during the ptycho reconstruction, starting from a more accurate value helps the convergence.
+
+-------------------------------
+Created by Chia-Hao Lee on 2024.03.07
+cl2696@cornell.edu

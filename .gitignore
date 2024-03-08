@@ -1,0 +1,5 @@
+# Matlab executable files
+*.mexw64
+
+# .raw EMPAD raw 4D-STEM data
+*.raw

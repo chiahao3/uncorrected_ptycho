@@ -1,0 +1,158 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+                  R2019b (9.7.0.1190202) 64-bit (glnxa64)
+                              August 21, 2019
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+ans = 
+
+  CUDADevice with properties:
+
+                      Name: 'Tesla V100-PCIE-16GB'
+                     Index: 1
+         ComputeCapability: '7.0'
+            SupportsDouble: 1
+             DriverVersion: 11.6000
+            ToolkitVersion: 10.1000
+        MaxThreadsPerBlock: 1024
+          MaxShmemPerBlock: 49152
+        MaxThreadBlockSize: [1024 1024 64]
+               MaxGridSize: [2.1475e+09 65535 65535]
+                 SIMDWidth: 32
+               TotalMemory: 1.6946e+10
+           AvailableMemory: 1.6448e+10
+       MultiprocessorCount: 80
+              ClockRateKHz: 1380000
+               ComputeMode: 'Default'
+      GPUOverlapsTransfers: 1
+    KernelExecutionTimeout: 0
+          CanMapHostMemory: 1
+           DeviceSupported: 1
+            DeviceSelected: 1
+
+Started at 2023-01-29_15-35-14
+[Warning: Directory already exists.] 
+[> In runPtycho_cc_Talos_0119_WSe2_0036 (line 132)] 
+data_roi4_Ndp256_step128_dp.hdf5 has been saved!
+[Warning: MATLAB has disabled some advanced graphics rendering features by
+switching to software OpenGL. For more information, click <a
+href="matlab:opengl('problems')">here</a>.] 
+[init] : Preparing paths.
+[init] :  p.queue.name is not set, using default p.queue.name = ''
+[init] : p.detector.data_prefix is not defined
+[init] : Using matlab APS data preparator.
+[init] : run_name = S00004_256x256_b0_MLs_L1_p15_g256_pc0_noModel_updW100_vp2_vi_mm
+[init] : base_path = /scratch/users/chiahao3/20230119_TEM_Talos_200kV_WSe2_16_EMPAD/0036_step128_20.5Mx_cl98mm_10.5mrad_df0_19pA/
+[init] : Using default save_path
+[init] : save_path = /scratch/users/chiahao3/20230119_TEM_Talos_200kV_WSe2_16_EMPAD/0036_step128_20.5Mx_cl98mm_10.5mrad_df0_19pA/analysis/S00000-00999/S00004/
+[init] : Using default prepared data path
+[init] : prepare_data_path = /scratch/users/chiahao3/20230119_TEM_Talos_200kV_WSe2_16_EMPAD/0036_step128_20.5Mx_cl98mm_10.5mrad_df0_19pA/analysis/S00000-00999/S00004/
+[init] : Using default prepared data filename
+[init] : prepare_data_filename = S00004_data_256x256.h5
+[init] : Loading preferences for empad detector.
+[init] : read_path_format not defined for empad. Using default value.
+[init] : Preparing initial guess.
+[init] : Computed object size: 795 x 805
+[init] : Using loaded object as initial guess.
+[init] : Loading object 1 from: /scratch/users/chiahao3/20230119_TEM_Talos_200kV_WSe2_16_EMPAD/0036_step128_20.5Mx_cl98mm_10.5mrad_df0_19pA/3/roi3_Ndp256_step128/MLs_L1_p15_g256_pc500_noModel_updW100_vp2_vi_mm/Niter9000.mat
+[init] : Warning: Object taken from file /scratch/users/chiahao3/20230119_TEM_Talos_200kV_WSe2_16_EMPAD/0036_step128_20.5Mx_cl98mm_10.5mrad_df0_19pA/3/roi3_Ndp256_step128/MLs_L1_p15_g256_pc500_noModel_updW100_vp2_vi_mm/Niter9000.mat does not have the expected size of 795 x 805.
+[init] : Using previous run as initial probe.
+[init] : Loaded probe from: /scratch/users/chiahao3/20230119_TEM_Talos_200kV_WSe2_16_EMPAD/0036_step128_20.5Mx_cl98mm_10.5mrad_df0_19pA/3/roi3_Ndp256_step128/MLs_L1_p15_g256_pc500_noModel_updW100_vp2_vi_mm/Niter9000.mat
+[init] : File /scratch/users/chiahao3/20230119_TEM_Talos_200kV_WSe2_16_EMPAD/0036_step128_20.5Mx_cl98mm_10.5mrad_df0_19pA/3/roi3_Ndp256_step128/MLs_L1_p15_g256_pc500_noModel_updW100_vp2_vi_mm/Niter9000.mat loaded successfully.
+[init] : Loading raw data
+[init] : Preparing data using matlab APS data preparation.
+[init] : Using supplied center: 129  129
+[init] : Using center: (129, 129)
+[init] : Selected region: ('RowFrom', 1, 'RowTo', 256, 'ColumnFrom', 1, 'ColumnTo', 256)
+[init] : Loading raw data of scan 00004.
+[init] : HDF5 file name:/scratch/users/chiahao3/20230119_TEM_Talos_200kV_WSe2_16_EMPAD/0036_step128_20.5Mx_cl98mm_10.5mrad_df0_19pA/4/data_roi4_Ndp256_step128_dp.hdf5
+[init] : Loaded data from:/scratch/users/chiahao3/20230119_TEM_Talos_200kV_WSe2_16_EMPAD/0036_step128_20.5Mx_cl98mm_10.5mrad_df0_19pA/4/data_roi4_Ndp256_step128_dp.hdf5
+[init] : Number of probe positions: 16384
+[init] : Number of diffraction patterns : 16384
+[init] : Finished data preparation and initialization.
+[ptycho] : Reconstructing S00004 
+[ptycho] : Calling engine GPU
+[GPU/CPU-engine] : Intermediate results will be saved in the directory below every 100 iterations.
+[GPU/CPU-engine] : /scratch/users/chiahao3/20230119_TEM_Talos_200kV_WSe2_16_EMPAD/0036_step128_20.5Mx_cl98mm_10.5mrad_df0_19pA/4/roi4_Ndp256_step128//MLs_L1_p15_g256_pc0_noModel_updW100_vp2_vi_mm/
+[GPU/CPU-engine] : Loading constant probe (1)
+[GPU/CPU-engine] : Loading constant probe (2)
+[GPU/CPU-engine] : Loading constant probe (3)
+[GPU/CPU-engine] : Loading constant probe (4)
+[GPU/CPU-engine] : Loading constant probe (5)
+[GPU/CPU-engine] : Loading constant probe (6)
+[GPU/CPU-engine] : Loading constant probe (7)
+[GPU/CPU-engine] : Loading constant probe (8)
+[GPU/CPU-engine] : Loading constant probe (9)
+[GPU/CPU-engine] : Loading constant probe (10)
+[GPU/CPU-engine] : Loading constant probe (11)
+[GPU/CPU-engine] : Loading constant probe (12)
+[GPU/CPU-engine] : Loading constant probe (13)
+[GPU/CPU-engine] : Loading constant probe (14)
+[GPU/CPU-engine] : Loading constant probe (15)
+[GPU/CPU-engine] : Load and pad object and probe
+[GPU/CPU-engine] : Preparing data and masks
+[GPU/CPU-engine] : GPU 1 initialized ... 
+[GPU] : 131 of 198 GB RAM free
+[GPU] : Check GPU load
+[GPU] : 
+----MEMORY REPORT GPU ID:1-----
+Required total memory 6.60GB
+ - Required data memory 4.29GB 
+ - Required object memory 0.02GB 
+ - Required FFT memory 1.61GB 
+ ============================ 
+available memory 16.45/16.95GB
+[GPU] :  === Starting MLs solver === 
+[GPU] : Maximal possible grouping 1361
+[GPU] : Selected grouping 256
+[GPU-1_MLs_WSe2_] : Started solver using MLs method on GPU 1
+[GPU-1_MLs_WSe2_] : Moving data to GPU
+[GPU-1_MLs_WSe2_] : Free GPU memory 16.45GB
+[GPU-1_MLs_WSe2_] : Data moved to GPU
+[GPU-1_MLs_WSe2_] : Free GPU memory 12.11GB
+[Warning: FFT was not able to allocate enough memory] 
+
+ans = 
+
+  CUDADevice with properties:
+
+                      Name: 'Tesla V100-PCIE-16GB'
+                     Index: 1
+         ComputeCapability: '7.0'
+            SupportsDouble: 1
+             DriverVersion: 11.6000
+            ToolkitVersion: 10.1000
+        MaxThreadsPerBlock: 1024
+          MaxShmemPerBlock: 49152
+        MaxThreadBlockSize: [1024 1024 64]
+               MaxGridSize: [2.1475e+09 65535 65535]
+                 SIMDWidth: 32
+               TotalMemory: 1.6946e+10
+           AvailableMemory: 190513152
+       MultiprocessorCount: 80
+              ClockRateKHz: 1380000
+               ComputeMode: 'Default'
+      GPUOverlapsTransfers: 1
+    KernelExecutionTimeout: 0
+          CanMapHostMemory: 1
+           DeviceSupported: 1
+            DeviceSelected: 1
+
+> In engines.GPU.shared.fft2_safe (line 91)
+  In engines.GPU.shared.fwd_fourier_proj (line 85)
+  In engines.GPU.LSQML.get_forward_model (line 79)
+  In engines.GPU.LSQML (line 92)
+  In engines.GPU.ptycho_solver (line 293)
+  In engines.GPU (line 118)
+  In core.run_engine (line 81)
+  In core.ptycho_recons/ptycho_call (line 202)
+  In core.ptycho_recons (line 289)
+  In runPtycho_cc_Talos_0119_WSe2_0036 (line 464)
+[Warning: Out of memory on device. MATLAB was unable to allocate sufficient
+resources on the GPU to complete this operation. If the problem persists, reset
+the GPU by calling 'gpuDevice(1)'.] 
